@@ -4,7 +4,7 @@ const THEME_KEY = 'portfolio-theme'
 
 export default function Navbar() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem(THEME_KEY) || 'dark'
+    return localStorage.getItem(THEME_KEY) || 'light'
   })
 
   useEffect(() => {
