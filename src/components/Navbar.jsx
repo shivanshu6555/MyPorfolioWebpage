@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <a href="#" className="navbar__brand">
-        Shivanshu Bhargava
+        Muskan Bhargava
       </a>
       <div className="navbar__right">
         <nav className="navbar__nav">

@@ -1,89 +1,123 @@
 export default function Landing() {
+
   const socialLinks = [
-    { label: 'LinkedIn', href: 'https://linkedin.com/in/shivanshu-bhargava-0b7856185', icon: <LinkedInIcon /> },
-    { label: 'GitHub', href: 'https://github.com/shivanshu6555', icon: <GitHubIcon /> },
-    { label: 'Email', href: 'mailto:shivanshubhargava63@gmail.com', icon: <EmailIcon /> },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/muskan-bhargava-853a881ab/', icon: <LinkedInIcon /> },
+    { label: 'Email', href: 'mailto:muskanbhargava43@gmail.com', icon: <EmailIcon /> },
   ]
 
   const stats = [
-    { value: '5+', label: 'Years Experience' },
-    { value: '3', label: 'Companies' },
-    { value: '2', label: 'Projects' },
+    { value: '4.5+', label: 'Years Experience' },
+    { value: '2', label: 'Companies' },
+    { value: 'Multiple', label: 'MES Projects' },
   ]
 
   const aboutCards = [
-    { emoji: '⚡', title: 'Full-Stack Focus', desc: 'Building REST APIs and scalable frontends with .NET and React.' },
-    { emoji: '🏦', title: 'Financial Tech', desc: "Contributing to Bank of America's wealth management platform (Merrill)." },
-    { emoji: '🔧', title: 'Ship & Improve', desc: 'From migration and automation to resolving production issues ahead of deadlines.' },
+    {
+      emoji: '🏭',
+      title: 'MES Implementation',
+      desc: 'Experienced in implementing Siemens OpCenter Execution Pharma MES solutions for pharmaceutical manufacturing processes.',
+    },
+    {
+      emoji: '⚙️',
+      title: 'Manufacturing Workflows',
+      desc: 'Designing process blocks, master batch records, and manufacturing workflows across multiple MES projects.',
+    },
+    {
+      emoji: '📋',
+      title: 'Compliance & Validation',
+      desc: 'Ensuring compliance with industry standards including ISA-95, CFR Part 11, and GxP regulations.',
+    },
   ]
 
   const skills = {
-    technical: ['ASP.NET Core', 'Entity Framework', 'C#', 'MVC', 'REST API', 'React', 'Angular', 'Socket.io', 'Realm', 'Material UI', 'Bootstrap', 'Tailwind CSS', 'HTML5/CSS3', 'SQL Server', 'Docker', 'Kubernetes', 'JSON'],
-    tools: ['GIT', 'Jira', 'Azure (CI/CD)', 'ReSharper', 'SonarQube'],
-    others: ['UI/UX design', 'Wireframing', 'Debugging'],
+    technical: [
+      'Siemens OpCenter Execution Pharma',
+      'Tulip',
+      'SQL',
+      'Recipe Authoring',
+      'Master Batch Records (MBR)',
+      'Manufacturing Execution Systems',
+      'Equipment Integration',
+      'OPC Kepware',
+      'Material Flow Management',
+      'Weigh & Dispense Module'
+    ],
+    tools: [
+      'MES Configuration',
+      'Recipe Design',
+      'Block Design',
+      'Testing & Qualification',
+      'GMP Documentation'
+    ],
+    others: [
+      'Requirements Gathering',
+      'Stakeholder Communication',
+      'Client Demos',
+      'Troubleshooting MES Operations'
+    ],
   }
 
   const experiences = [
     {
-      company: 'Infosys — Bank of America',
-      role: 'Senior Associate Consultant',
-      period: 'Aug 2024 — Present',
+      company: 'NNIT — Singapore (Client: Sanofi)',
+      role: 'Associate Engineer II / MES Block Designer',
+      period: 'Nov 2023 — Present',
       points: [
-        "Contributing to Bank of America's wealth management platform (Merrill), built on .NET and Angular.",
-        'Implementing feature updates, redesigning reports, and customizing components per client requirements.',
-        'Delivering optimized UX and insightful wealth reports; resolving production issues ahead of deadlines.',
-        'Automating routine bug-tracking tasks to improve team efficiency.',
+        'Working on Sanofi MARS project delivering MES solutions using Siemens OpCenter Execution Pharma.',
+        'Designing and configuring manufacturing blocks and workflows for pharmaceutical production processes.',
+        'Collaborating with stakeholders for requirements gathering, clarification, and demo sessions.',
+        'Supporting MES operations and troubleshooting issues on the manufacturing shop floor.'
       ],
-      tags: ['.NET', 'Angular', 'Wealth Management'],
+      tags: ['MES', 'OpCenter Pharma', 'Sanofi'],
     },
     {
-      company: "Capgemini — McDonald's",
-      role: 'Associate Consultant',
-      period: 'Sep 2022 — Aug 2024',
+      company: 'Capgemini — Mumbai',
+      role: 'MES Engineer',
+      period: 'Jul 2021 — Nov 2023',
       points: [
-        "Migrated McDonald's POS application from C++ to C# and JavaScript for standardization and scalability.",
-        'Developed Kiosk applications using React.js and .NET microservices for cross-platform integration.',
-        'Optimized legacy code with ReSharper and SonarQube; resolved 25+ critical production defects on time.',
+        'Designed and delivered process blocks for manufacturing workflows using OpCenter Execution Pharma.',
+        'Developed equipment-connected blocks using OPC Kepware and created assemblies for multiple sites.',
+        'Created and modified Master Batch Records (MBRs) within the MES system.',
+        'Prepared validation scripts and UAT documentation ensuring compliance and successful project delivery.'
       ],
-      tags: ['C#', 'React', '.NET', 'Microservices'],
-    },
-    {
-      company: 'Capgemini — Meijer',
-      role: 'Associate Consultant',
-      period: 'Nov 2021 — Aug 2022',
-      points: [
-        'Hosted 15+ .NET applications from Meijer servers to Azure Cloud using Azure features.',
-        'Implemented client-requested features and integrated Key Vault, App Insights, and Active Directory.',
-        'Gained hands-on experience with Azure blob storage and CI/CD.',
-      ],
-      tags: ['Azure', '.NET', 'CI/CD'],
+      tags: ['Siemens OpCenter', 'OPC Kepware', 'Pharma Manufacturing'],
     },
   ]
 
   const projects = [
     {
-      title: 'Real Time Health Tracking Dashboard',
-      desc: 'Led development of a dynamic health-tracking dashboard for smart shirts, integrating real-time body metrics with interactive graphs, charts, and tables. Implemented secure user management (phone/email verification, role-based auth, Firebase), Node.js/Express backend, MongoDB, RESTful APIs, real-time communication, and file handling with GridFS and Multer.',
-      tech: ['React', 'Redux', 'Socket.io', 'Realm', 'Node.js', 'Express', 'MongoDB', 'Firebase'],
+      title: 'Pharmaceutical MES Implementation',
+      desc: 'Configured Siemens OpCenter Execution Pharma for manufacturing operations including equipment integration, material flow management, and batch record management.',
+      tech: ['OpCenter Execution Pharma', 'SQL', 'OPC Kepware']
     },
     {
-      title: 'BeSocial',
-      desc: 'Social media application for organizations with photo sharing, status updates, friend connections, and group chats.',
-      tech: ['React', 'Redux', 'Material UI', 'Express', 'MongoDB', 'JWT', 'Multer'],
-    },
+      title: 'Recipe Authoring & Batch Management',
+      desc: 'Designed and authored recipes for PI Management and configured equipment modules including Weigh & Dispense and Material Flow Management.',
+      tech: ['MES', 'Recipe Authoring', 'Manufacturing Workflows']
+    }
   ]
 
   const education = [
-    { degree: 'Bachelor of Technology', institution: 'Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal', period: 'Jul 2017 — Aug 2021', details: 'Operating Systems, Data Structures & Algorithms, OOP, Discrete Mathematics' },
-    { degree: 'Science and Mathematics — XII', institution: 'Christ Senior Secondary School, Guna', period: 'Apr 2016 — Jul 2017', details: null },
+    {
+      degree: 'Bachelor of Technology — Information Technology',
+      institution: 'Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal',
+      period: 'Jul 2017 — Aug 2021',
+      details: null
+    },
+    {
+      degree: 'Science and Mathematics — XII',
+      institution: 'K.B.M. Higher Secondary School, Pipariya',
+      period: 'Apr 2016 — Jul 2017',
+      details: null
+    }
   ]
 
   return (
     <main className="landing">
       <section className="landing__hero section">
-        <p className="landing__name-line">Shivanshu Bhargava</p>
+        <p className="landing__name-line">Muskan Bhargava</p>
         <p className="landing__tagline">
-        Results-oriented Full-Stack Developer with 5 years of experience specializing in .NET (C#) and React.js. I bridge the gap between robust REST APIs and scalable frontend components to deliver high-performance digital solutions.
+        Results-driven MES Engineer with 4.5+ years of experience implementing Siemens OpCenter Execution Pharma solutions in the pharmaceutical industry, specializing in manufacturing workflows, block design, and compliance-driven system configuration.
         </p>
         <a href="#contact" className="landing__cta">Get in Touch →</a>
         <div className="landing__accent" aria-hidden />
@@ -100,7 +134,9 @@ export default function Landing() {
       <section id="about" className="section about">
         <h2 className="section__title">About Me</h2>
         <p className="about__text">
-          I'm Shivanshu Bhargava, a Software Engineer passionate about building scalable APIs and intuitive frontends. I focus on delivering quality in production and continuously improving processes through automation and clean code.
+        <p className="about__text">
+I'm Muskan Bhargava, an MES Engineer with over 4.5 years of experience working on Siemens OpCenter Execution Pharma solutions in the pharmaceutical industry. I specialize in designing manufacturing workflows, configuring MES systems, and ensuring compliance with industry standards like ISA-95, CFR Part 11, and GxP.
+</p>
         </p>
         <div className="about__cards">
           {aboutCards.map(({ emoji, title, desc }) => (
@@ -197,9 +233,10 @@ export default function Landing() {
         <p className="contact__blurb">
           Have a role or project in mind? I'd love to hear from you. Reach out via email or connect on LinkedIn.
         </p>
-        <a href="mailto:shivanshubhargava63@gmail.com" className="contact__email">shivanshubhargava63@gmail.com</a>
-        <a href="tel:+918889595057" className="contact__phone">+91-8889595057</a>
-        <p className="contact__location">Pune, Maharashtra</p>
+        <a href="mailto:muskanbhargava43@gmail.com" className="contact__email">muskanbhargava43@gmail.com</a>
+        <a href="tel:+919111508587" className="contact__phone">+91-9111508587</a>
+        <a href="tel:+6584376671" className="contact__phone">+65-84376671</a>
+        <p className="contact__location">Singapore</p>
         <div className="social">
           {socialLinks.map(({ label, href, icon }) => (
             <a key={label} href={href} className="social__link" target={href.startsWith('mailto') ? undefined : '_blank'} rel={href.startsWith('mailto') ? undefined : 'noopener noreferrer'} aria-label={label}>{icon}</a>
