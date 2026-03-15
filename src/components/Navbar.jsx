@@ -4,7 +4,7 @@ const THEME_KEY = 'portfolio-theme'
 
 export default function Navbar() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem(THEME_KEY) || 'light'
+    return localStorage.getItem(THEME_KEY) || 'dark'
   })
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <a href="#" className="navbar__brand">
-        Muskan Bhargava
+        Shivanshu Bhargava
       </a>
       <div className="navbar__right">
         <nav className="navbar__nav">
